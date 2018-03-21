@@ -7,26 +7,21 @@ html {
 }
 /*List-1*/
 section {
-	width: 30%;
-	height: 300px;
+	width: 500px;
+	height: 100px;
 	background: brown;
-	padding: 5% 0;
 	margin: 20px 0 0 20px;
-	display: inline-block;
+	padding: 5% 0;
 }
-section div {
-	width: 62%;
+section ul {
+	width: 69%;
 	height: 70px;
-	margin: 0 auto;
-	padding: 18% 0;
-	position: relative;
-}
-section div ul {
-	height: 70px;
+	margin: 3% auto;
 	list-style-type: none;
 	text-align: right;	
+	position: relative;
 }
-section div ul li {
+section ul li {
 	width: 70px;
 	height: 70px;
 	display: inline-block;
@@ -39,119 +34,138 @@ section div ul li {
 	text-align: center;
 	line-height: 70px;
 }
-section div ul li:nth-child(1) {
+section ul li:nth-child(1) {
 	background: green;
 }
-section div ul li:nth-child(4) {
+section ul li:nth-child(4) {
 	background: blue;
 	margin-right: 0;
 }
-section div ul li:nth-child(2) {
+section ul li:nth-child(2) {
 	background: pink;
 }
-section div ul li:nth-child(3) {
+section ul li:nth-child(3) {
 	background: gray;
 }
 /*List-2.1*/
-section[name="section2"]:hover li {
-	margin-right: 17px;
+section[name="section1"]:hover li {
+	margin-right: 19px;
 }
-section[name="section2"]:hover li:nth-child(2) {
+section[name="section1"]:hover li:nth-child(2) {
 	background: yellow;
 }
-section[name="section2"]:hover li:nth-child(4) {
+section[name="section1"]:hover li:nth-child(4) {
 	background: orange;
+	margin-right: 0;
 }
-section[name="section2"]:hover li:nth-child(1), section[name="section2"]:hover li:nth-child(3) {
-	border: 2px black solid; 
-	margin-top: -2px;
+section[name="section1"]:hover li:nth-child(1) {
+	border: 1px black solid; 
+	margin-top: -1px;
+	margin-left: -1px;
+}
+section[name="section1"]:hover li:nth-child(3) {
+	border: 1px black solid; 
+	margin-top: -1px;
 }
 /*List-2.2*/
-section[name="section2"] ul li:nth-child(1):hover:after {
+section[name="section1"] ul li:nth-child(1):hover:after {
 	content: "2";
 	width: 70px;
 	height: 70px;
 	background: black;
 	position: absolute;
 	display: block;
-	top: 104px;
-	left: 91px;
+	top: 0;
+	left: 90px;
 }
 /*List-2.3*/
-section[name="section2"] ul li:nth-child(2):hover:after {
+section[name="section1"] ul li:nth-child(2):hover:after {
 	content: "3";
 	width: 70px;
 	height: 70px;
 	background: violet;
 	position: absolute;
-	top: 104px;
+	top: 0;
 	left: 180px;
 }
-section[name="section2"] ul li:nth-child(2):hover:before {
+section[name="section1"] ul li:nth-child(2):hover:before {
 	content: "4";
 	width: 70px;
 	height: 70px;
 	background: lightgreen;
 	position: absolute;
-	top: 104px;
-	left: 269px;
+	top: 0;
+	left: 270px;
 }
-/*List-3.1*/
-section[name="section3"]:hover li:nth-child(1):before {
+/*List-3*/
+section[name="section2"] li:nth-child(1) {
 	content: "1";
 	width: 70px;
 	height: 70px;
 	position: absolute;
 	background: green;
-	top: 104px;
-	left: 180px;
-}
-section[name="section3"]:hover li:nth-child(3):before {
-	content: "3";
-	width: 70px;
-	height: 70px;
-	position: absolute;
-	background: grey;
-	top: 104px;
+	top: 0;
 	left: 0;
 }
-/*List-3.2*/
-section[name="section3"]:hover li:nth-child(2):before {
+section[name="section2"] li:nth-child(2) {
 	content: "2";
 	width: 70px;
 	height: 70px;
 	position: absolute;
 	background: pink;
-	top: 104px;
-	left: 270px;
+	top: 0;
+	left: 90px;
 }
-section[name="section3"]:hover li:nth-child(4):before {
+section[name="section2"] li:nth-child(3) {
+	content: "3";
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background: grey;
+	top: 0;
+	left: 180px;
+}
+section[name="section2"] li:nth-child(4) {
 	content: "4";
 	width: 70px;
 	height: 70px;
 	position: absolute;
 	background: blue;
-	top: 104px;
+	top: 0;
+	left: 270px;
+}
+/*List-3.1*/
+section[name="section2"]:hover li:nth-child(1) {
+	left: 180px;
+}
+section[name="section2"]:hover li:nth-child(3) {
+	left: 0;
+}
+/*List-3.2*/
+section[name="section2"]:hover li:nth-child(2) {
+	left: 270px;
+}
+section[name="section2"]:hover li:nth-child(4) {
 	left: 90px;
 }
 /*List-3.3*/
-section[name="section3"] li:nth-child(1):hover:after {
+section[name="section2"] li:nth-child(1):hover:after {
 	content: "2";
 	width: 70px;
 	height: 70px;
 	background: pink;
 	position: absolute;
-	top: 104px;
-	left: 0;
+	top: 0;
+	left: -180px;
 	z-index: 1;
 }
-section[name="section3"] li:nth-child(1):hover:after {
+section[name="section2"] li:nth-child(1):hover:before {
 	content: "3";
 	width: 70px;
 	height: 70px;
 	background: grey;
 	position: absolute;
-	top: 104px;
-	left: 270px;
+	top: 0;
+	left: 90px;
 	z-index: 1;
 }
